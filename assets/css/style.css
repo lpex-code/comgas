@@ -9,7 +9,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     justify-content: center;
     max-height: 100%;
     max-width: 100%;
@@ -151,7 +151,7 @@
     opacity: 0;
 }
 .bt-viewall {
-    margin-top: 60px;
+    margin: 60px 0;
 }
 .bt-viewall .bt-view {
     border: 1px solid hsla(0, 0%, 90%, .6   );
@@ -189,7 +189,10 @@
         height: auto;
         padding-top: 20px;
     }
-    .bt-viewall {
-        margin: 60px 0;
+}
+
+@media screen and (min-height: 1000px) {
+    .video {
+        height: 100vh;
     }
 }

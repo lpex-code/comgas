@@ -4,6 +4,9 @@ function video2 () {
     const elVideo2 = document.querySelector('#video2');
 
     elVideo2.addEventListener('click', () => {
+        elVideo.classList.remove('hidden');
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         elVideoSrc.src = elVideo2.getAttribute('data-source');
         elVideo2.classList.add('visto');
@@ -19,6 +22,9 @@ function video3 () {
     const elVideo3 = document.querySelector('#video3');
 
     elVideo3.addEventListener('click', () => {
+        elVideo.classList.remove('hidden');
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         elVideoSrc.src = elVideo3.getAttribute('data-source');
         elVideo3.classList.add('visto');
@@ -42,6 +48,9 @@ function video4 () {
     const btn6 = document.getElementById('video7');
 
     elVideo3.addEventListener('click', () => {
+        elVideo.classList.remove('hidden');
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         elVideoSrc.src = elVideo3.getAttribute('data-source');
         elVideo3.classList.add('visto');
@@ -64,6 +73,9 @@ function video5 () {
     const elVideo3 = document.querySelector('#video5');
 
     elVideo3.addEventListener('click', () => {
+        elVideo.classList.remove('hidden');
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         elVideoSrc.src = elVideo3.getAttribute('data-source');
         elVideo3.classList.add('visto');
@@ -79,6 +91,9 @@ function video6 () {
     const elVideo3 = document.querySelector('#video6');
 
     elVideo3.addEventListener('click', () => {
+        elVideo.classList.remove('hidden');
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         elVideoSrc.src = elVideo3.getAttribute('data-source');
         elVideo3.classList.add('visto');
@@ -94,6 +109,9 @@ function video7 () {
     const elVideo3 = document.querySelector('#video7');
 
     elVideo3.addEventListener('click', () => {
+        elVideo.classList.remove('hidden');
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         elVideoSrc.src = elVideo3.getAttribute('data-source');
         elVideo3.classList.add('visto');
@@ -104,12 +122,23 @@ function video7 () {
 video7 ();
 
 /* Recupera o tempo do vídeo */
-document.querySelector('#video-default').addEventListener('timeupdate', () => {
-  const falta = Math.round(document.querySelector('#video-default').duration) - 4;
+// document.querySelector('#video-default').addEventListener('timeupdate', () => {
+//   const falta = Math.round(document.querySelector('#video-default').duration) - 4;
   
-  if(Math.round(document.querySelector('#video-default').currentTime) === falta) {
-  	document.querySelector('.group-bt').classList.remove('hidden');
-  }
+//   if(Math.round(document.querySelector('#video-default').currentTime) >= falta) {
+  	
+//   }
+// });
+
+document.querySelector('#video-default').addEventListener('ended', () => {
+    document.querySelector('.group-bt').classList.remove('hidden');
+    document.querySelector('#video-default').classList.add('hidden');
+    document.querySelector('#gamefication').classList.remove('hidden');
+    document.querySelector('#gamefication').play();
+});
+
+document.querySelector('#video-gal').addEventListener('ended', () => {
+    document.querySelector('#video-gal').load();
 });
 
 function videoGaleria1 () {
@@ -119,6 +148,8 @@ function videoGaleria1 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         document.querySelector('#video-default').classList.add('hidden');
         document.querySelector('#video-default').pause();
@@ -137,6 +168,8 @@ function videoGaleria2 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         document.querySelector('#video-default').classList.add('hidden');
         document.querySelector('#video-default').pause();
@@ -155,6 +188,8 @@ function videoGaleria3 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         document.querySelector('#video-default').classList.add('hidden');
         document.querySelector('#video-default').pause();
@@ -173,6 +208,8 @@ function videoGaleria4 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         document.querySelector('#video-default').classList.add('hidden');
         document.querySelector('#video-default').pause();
@@ -191,6 +228,8 @@ function videoGaleria5 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         document.querySelector('#video-default').classList.add('hidden');
         document.querySelector('#video-default').pause();
@@ -209,6 +248,8 @@ function videoGaleria6 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
         document.querySelector('#video-default').classList.add('hidden');
         document.querySelector('#video-default').pause();
