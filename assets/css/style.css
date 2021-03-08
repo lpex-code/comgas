@@ -186,12 +186,18 @@
 
 @media screen and (max-height: 400px) {
     .video {
-        height: auto;
+        height: auto!important;
         padding-top: 20px;
     }
 }
 
 @media screen and (min-height: 1000px) {
+    .video {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1025px) {
     .video {
         height: 100vh;
     }
