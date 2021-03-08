@@ -1,0 +1,8 @@
+@import 'root.css';
+@import 'reset.css';
+@import 'style.css';
+/* Font icon Awesome */
+@import 'all-font-awesome.min.css';
+/* Carousel */
+@import 'owl.carousel.min.css';
+@import 'owl.theme.default.min.css';
