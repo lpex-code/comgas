@@ -9,16 +9,20 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100vh;
     justify-content: center;
     max-height: 100%;
     max-width: 100%;
     width: 100vw;
 }
-.video .box-video {}
+.video .box-video {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 .video .box-video video {
     border-radius: 10px;
-    width: 100%;
+    width: 80%;
 }
 .anime {
     -webkit-transition: all .2s ease-in-out;
@@ -34,7 +38,7 @@
     display: grid;
     gap: 40px;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    width: 100%;
+    width: 80%;
     margin-top: 30px;
 }
 .group-bt button {
