@@ -5,6 +5,7 @@ function video2 () {
 
     elVideo2.addEventListener('click', () => {
         elVideo.classList.remove('hidden');
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -23,6 +24,7 @@ function video3 () {
 
     elVideo3.addEventListener('click', () => {
         elVideo.classList.remove('hidden');
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -49,6 +51,7 @@ function video4 () {
 
     elVideo3.addEventListener('click', () => {
         elVideo.classList.remove('hidden');
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -74,6 +77,7 @@ function video5 () {
 
     elVideo3.addEventListener('click', () => {
         elVideo.classList.remove('hidden');
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -92,6 +96,7 @@ function video6 () {
 
     elVideo3.addEventListener('click', () => {
         elVideo.classList.remove('hidden');
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -110,6 +115,7 @@ function video7 () {
 
     elVideo3.addEventListener('click', () => {
         elVideo.classList.remove('hidden');
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -131,6 +137,7 @@ video7 ();
 // });
 
 document.querySelector('#video-default').addEventListener('ended', () => {
+    document.querySelector('.video').classList.add('action-buttons');
     document.querySelector('.group-bt').classList.remove('hidden');
     document.querySelector('#video-default').classList.add('hidden');
     document.querySelector('#gamefication').classList.remove('hidden');
@@ -148,6 +155,7 @@ function videoGaleria1 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -168,6 +176,7 @@ function videoGaleria2 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -188,6 +197,7 @@ function videoGaleria3 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -208,6 +218,7 @@ function videoGaleria4 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -228,6 +239,7 @@ function videoGaleria5 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -248,6 +260,7 @@ function videoGaleria6 () {
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
+        document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
         document.querySelector('#gamefication').pause();
         document.querySelector('.group-bt').classList.add('hidden');
@@ -266,6 +279,7 @@ function viewAll () {
     const dcViewAll = document.querySelector('.view');
 
     elViewAll.addEventListener('click', () => {
+        document.querySelector('.bt-viewall').classList.add('hidden');
         dcViewAll.classList.remove('hidden');
         elViewAll.classList.add('hidden');
     });
