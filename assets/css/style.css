@@ -196,7 +196,7 @@
 @media screen and (max-width: 540px) {
     .action-buttons {
         height: auto!important;
-        padding-top: 20px;
+        padding: 40px 0;
     }
     .video .box-video video {
         width: 96%;
