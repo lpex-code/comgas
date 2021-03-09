@@ -187,9 +187,10 @@
     }
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 415px) {
     .video {
         height: auto!important;
+        padding: 40px 0;
     }
 }
 
