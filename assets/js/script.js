@@ -127,15 +127,6 @@ function video7 () {
 }
 video7 ();
 
-/* Recupera o tempo do vídeo */
-// document.querySelector('#video-default').addEventListener('timeupdate', () => {
-//   const falta = Math.round(document.querySelector('#video-default').duration) - 4;
-  
-//   if(Math.round(document.querySelector('#video-default').currentTime) >= falta) {
-  	
-//   }
-// });
-
 document.querySelector('#video-default').addEventListener('ended', () => {
     document.querySelector('.video').classList.add('action-buttons');
     document.querySelector('.group-bt').classList.remove('hidden');
@@ -257,6 +248,27 @@ function videoGaleria6 () {
     const elVideoGal = document.querySelector('#video-gal');
     const elVideoGalSrc = document.querySelector('#video-gal source');
     const elVideoGal2 = document.querySelector('#vd6');
+
+    elVideoGal2.addEventListener('click', () => {
+        window.scrollTo(0, 0);
+        document.querySelector('.video').classList.remove('action-buttons');
+        document.querySelector('#gamefication').classList.add('hidden');
+        document.querySelector('#gamefication').pause();
+        document.querySelector('.group-bt').classList.add('hidden');
+        document.querySelector('#video-default').classList.add('hidden');
+        document.querySelector('#video-default').pause();
+        elVideoGal.classList.remove('hidden');
+        elVideoGalSrc.src = elVideoGal2.getAttribute('data-source');
+        elVideoGal.load();
+        elVideoGal.play();
+    })
+}
+videoGaleria6 ();
+
+function videoGaleria6 () {
+    const elVideoGal = document.querySelector('#video-gal');
+    const elVideoGalSrc = document.querySelector('#video-gal source');
+    const elVideoGal2 = document.querySelector('#vd7');
 
     elVideoGal2.addEventListener('click', () => {
         window.scrollTo(0, 0);
