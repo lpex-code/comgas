@@ -1,6 +1,6 @@
 function video2 () {
     const elVideo = document.querySelector('#video-default')
-    const elVideoSrc = document.querySelector('#video-default source');
+    const elVideoSrc = document.querySelector('#video-default');
     const elVideo2 = document.querySelector('#video2');
 
     elVideo2.addEventListener('click', () => {
@@ -19,7 +19,7 @@ video2 ();
 
 function video3 () {
     const elVideo = document.querySelector('#video-default')
-    const elVideoSrc = document.querySelector('#video-default source');
+    const elVideoSrc = document.querySelector('#video-default');
     const elVideo3 = document.querySelector('#video3');
 
     elVideo3.addEventListener('click', () => {
@@ -38,7 +38,7 @@ video3 ();
 
 function video4 () {
     const elVideo = document.querySelector('#video-default')
-    const elVideoSrc = document.querySelector('#video-default source');
+    const elVideoSrc = document.querySelector('#video-default');
     const elVideo3 = document.querySelector('#video4');
 
     const btn1 = document.getElementById('video2');
@@ -72,7 +72,7 @@ video4 ();
 
 function video5 () {
     const elVideo = document.querySelector('#video-default')
-    const elVideoSrc = document.querySelector('#video-default source');
+    const elVideoSrc = document.querySelector('#video-default');
     const elVideo3 = document.querySelector('#video5');
 
     elVideo3.addEventListener('click', () => {
@@ -91,7 +91,7 @@ video5 ();
 
 function video6 () {
     const elVideo = document.querySelector('#video-default')
-    const elVideoSrc = document.querySelector('#video-default source');
+    const elVideoSrc = document.querySelector('#video-default');
     const elVideo3 = document.querySelector('#video6');
 
     elVideo3.addEventListener('click', () => {
@@ -110,7 +110,7 @@ video6 ();
 
 function video7 () {
     const elVideo = document.querySelector('#video-default')
-    const elVideoSrc = document.querySelector('#video-default source');
+    const elVideoSrc = document.querySelector('#video-default');
     const elVideo3 = document.querySelector('#video7');
 
     elVideo3.addEventListener('click', () => {
@@ -149,7 +149,7 @@ const infosVd7 = document.querySelector('.vd7');
 
 function videoGaleria1 () {
     const elVideoGal = document.querySelector('#video-gal');
-    const elVideoGalSrc = document.querySelector('#video-gal source');
+    const elVideoGalSrc = document.querySelector('#video-gal');
     const elVideoGal2 = document.querySelector('#vd1');
 
     elVideoGal2.addEventListener('click', () => {
@@ -178,7 +178,7 @@ videoGaleria1 ();
 
 function videoGaleria2 () {
     const elVideoGal = document.querySelector('#video-gal');
-    const elVideoGalSrc = document.querySelector('#video-gal source');
+    const elVideoGalSrc = document.querySelector('#video-gal');
     const elVideoGal2 = document.querySelector('#vd2');
 
     elVideoGal2.addEventListener('click', () => {
@@ -207,7 +207,7 @@ videoGaleria2 ();
 
 function videoGaleria3 () {
     const elVideoGal = document.querySelector('#video-gal');
-    const elVideoGalSrc = document.querySelector('#video-gal source');
+    const elVideoGalSrc = document.querySelector('#video-gal');
     const elVideoGal2 = document.querySelector('#vd3');
 
     elVideoGal2.addEventListener('click', () => {
@@ -236,7 +236,7 @@ videoGaleria3 ();
 
 function videoGaleria4 () {
     const elVideoGal = document.querySelector('#video-gal');
-    const elVideoGalSrc = document.querySelector('#video-gal source');
+    const elVideoGalSrc = document.querySelector('#video-gal');
     const elVideoGal2 = document.querySelector('#vd4');
 
     elVideoGal2.addEventListener('click', () => {
@@ -265,7 +265,7 @@ videoGaleria4 ();
 
 function videoGaleria5 () {
     const elVideoGal = document.querySelector('#video-gal');
-    const elVideoGalSrc = document.querySelector('#video-gal source');
+    const elVideoGalSrc = document.querySelector('#video-gal');
     const elVideoGal2 = document.querySelector('#vd5');
 
     elVideoGal2.addEventListener('click', () => {
@@ -294,7 +294,7 @@ videoGaleria5 ();
 
 function videoGaleria6 () {
     const elVideoGal = document.querySelector('#video-gal');
-    const elVideoGalSrc = document.querySelector('#video-gal source');
+    const elVideoGalSrc = document.querySelector('#video-gal');
     const elVideoGal2 = document.querySelector('#vd6');
 
     elVideoGal2.addEventListener('click', () => {
@@ -323,7 +323,7 @@ videoGaleria6 ();
 
 function videoGaleria7 () {
     const elVideoGal = document.querySelector('#video-gal');
-    const elVideoGalSrc = document.querySelector('#video-gal source');
+    const elVideoGalSrc = document.querySelector('#video-gal');
     const elVideoGal2 = document.querySelector('#vd7');
 
     elVideoGal2.addEventListener('click', () => {
