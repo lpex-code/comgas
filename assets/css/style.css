@@ -191,8 +191,8 @@
     }
 }
 
-@media screen and (max-height: 415px) {
-    .video {
+@media screen and (max-height: 910px) {
+    .video.action-buttons {
         height: auto!important;
         padding: 40px 0;
     }
@@ -208,11 +208,12 @@
     }
 }
 
-@media screen and (min-height: 1000px) {
+/* @media screen and (min-height: 737px) {
     .video {
-        height: 100vh;
+        height: auto;
+        padding-top: 40px;
     }
-}
+} */
 
 @media screen and (max-width: 1025px) {
     .video {
