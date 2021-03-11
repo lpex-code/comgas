@@ -75,17 +75,17 @@
 .infos-all {
     padding: 60px 0 0 0;
 }
-.infos-all header h1 {
+.infos-all div header h1 {
     color: #2b82a4;
     font-weight: normal;
     font-size: 1.6rem;
 }
-.infos-all header p {
+.infos-all div header p {
     color: hsla(0, 0%, 40%, 1);
     font-size: .8rem;
     margin-top: 4px;
 }
-.infos-all > p {
+.infos-all div > p {
     color: hsla(0, 0%, 20%, 1);
     font-size: 1rem;
     margin-top: 20px;

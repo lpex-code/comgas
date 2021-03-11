@@ -139,12 +139,28 @@ document.querySelector('#video-gal').addEventListener('ended', () => {
     document.querySelector('#video-gal').load();
 });
 
+const infosVd1 = document.querySelector('.vd1');
+const infosVd2 = document.querySelector('.vd2');
+const infosVd3 = document.querySelector('.vd3');
+const infosVd4 = document.querySelector('.vd4');
+const infosVd5 = document.querySelector('.vd5');
+const infosVd6 = document.querySelector('.vd6');
+const infosVd7 = document.querySelector('.vd7');
+
 function videoGaleria1 () {
     const elVideoGal = document.querySelector('#video-gal');
     const elVideoGalSrc = document.querySelector('#video-gal source');
     const elVideoGal2 = document.querySelector('#vd1');
 
     elVideoGal2.addEventListener('click', () => {
+        infosVd1.classList.remove('hidden');
+        infosVd2.classList.add('hidden');
+        infosVd3.classList.add('hidden');
+        infosVd4.classList.add('hidden');
+        infosVd5.classList.add('hidden');
+        infosVd6.classList.add('hidden');
+        infosVd7.classList.add('hidden');
+
         window.scrollTo(0, 0);
         document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
@@ -166,6 +182,14 @@ function videoGaleria2 () {
     const elVideoGal2 = document.querySelector('#vd2');
 
     elVideoGal2.addEventListener('click', () => {
+        infosVd1.classList.add('hidden');
+        infosVd2.classList.remove('hidden');
+        infosVd3.classList.add('hidden');
+        infosVd4.classList.add('hidden');
+        infosVd5.classList.add('hidden');
+        infosVd6.classList.add('hidden');
+        infosVd7.classList.add('hidden');
+
         window.scrollTo(0, 0);
         document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
@@ -187,6 +211,14 @@ function videoGaleria3 () {
     const elVideoGal2 = document.querySelector('#vd3');
 
     elVideoGal2.addEventListener('click', () => {
+        infosVd1.classList.add('hidden');
+        infosVd2.classList.add('hidden');
+        infosVd3.classList.remove('hidden');
+        infosVd4.classList.add('hidden');
+        infosVd5.classList.add('hidden');
+        infosVd6.classList.add('hidden');
+        infosVd7.classList.add('hidden');
+
         window.scrollTo(0, 0);
         document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
@@ -208,6 +240,14 @@ function videoGaleria4 () {
     const elVideoGal2 = document.querySelector('#vd4');
 
     elVideoGal2.addEventListener('click', () => {
+        infosVd1.classList.add('hidden');
+        infosVd2.classList.add('hidden');
+        infosVd3.classList.add('hidden');
+        infosVd4.classList.remove('hidden');
+        infosVd5.classList.add('hidden');
+        infosVd6.classList.add('hidden');
+        infosVd7.classList.add('hidden');
+        
         window.scrollTo(0, 0);
         document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
@@ -229,6 +269,14 @@ function videoGaleria5 () {
     const elVideoGal2 = document.querySelector('#vd5');
 
     elVideoGal2.addEventListener('click', () => {
+        infosVd1.classList.add('hidden');
+        infosVd2.classList.add('hidden');
+        infosVd3.classList.add('hidden');
+        infosVd4.classList.add('hidden');
+        infosVd5.classList.remove('hidden');
+        infosVd6.classList.add('hidden');
+        infosVd7.classList.add('hidden');
+
         window.scrollTo(0, 0);
         document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
@@ -250,6 +298,14 @@ function videoGaleria6 () {
     const elVideoGal2 = document.querySelector('#vd6');
 
     elVideoGal2.addEventListener('click', () => {
+        infosVd1.classList.add('hidden');
+        infosVd2.classList.add('hidden');
+        infosVd3.classList.add('hidden');
+        infosVd4.classList.add('hidden');
+        infosVd5.classList.add('hidden');
+        infosVd6.classList.remove('hidden');
+        infosVd7.classList.add('hidden');
+
         window.scrollTo(0, 0);
         document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
@@ -265,12 +321,20 @@ function videoGaleria6 () {
 }
 videoGaleria6 ();
 
-function videoGaleria6 () {
+function videoGaleria7 () {
     const elVideoGal = document.querySelector('#video-gal');
     const elVideoGalSrc = document.querySelector('#video-gal source');
     const elVideoGal2 = document.querySelector('#vd7');
 
     elVideoGal2.addEventListener('click', () => {
+        infosVd1.classList.add('hidden');
+        infosVd2.classList.add('hidden');
+        infosVd3.classList.add('hidden');
+        infosVd4.classList.add('hidden');
+        infosVd5.classList.add('hidden');
+        infosVd6.classList.add('hidden');
+        infosVd7.classList.remove('hidden');
+
         window.scrollTo(0, 0);
         document.querySelector('.video').classList.remove('action-buttons');
         document.querySelector('#gamefication').classList.add('hidden');
@@ -284,7 +348,7 @@ function videoGaleria6 () {
         elVideoGal.play();
     })
 }
-videoGaleria6 ();
+videoGaleria7 ();
 
 function viewAll () {
     const elViewAll = document.querySelector('.bt-view');
