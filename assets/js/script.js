@@ -179,6 +179,7 @@ document.querySelector('#video-default').addEventListener('ended', () => {
             case 'assets/videos/video-1.mp4':
                 document.querySelector('#video-default').src= "assets/videos/video-2-3.mp4";
                 document.querySelector('#video-default').play();
+                document.querySelector('.video').classList.remove('action-buttons');
                 document.querySelector('#video-default').classList.remove('hidden');
                 document.querySelector('#gamefication').classList.add('hidden');
                 document.querySelector('.group-bt').classList.add('hidden');
@@ -190,6 +191,7 @@ document.querySelector('#video-default').addEventListener('ended', () => {
             case 'assets/videos/video-2-3.mp4':
                 document.querySelector('#video-default').src= "assets/videos/video-4.mp4";
                 document.querySelector('#video-default').play();
+                document.querySelector('.video').classList.remove('action-buttons');
                 document.querySelector('#video-default').classList.remove('hidden');
                 document.querySelector('#gamefication').classList.add('hidden');
                 document.querySelector('.group-bt').classList.add('hidden');
@@ -201,6 +203,7 @@ document.querySelector('#video-default').addEventListener('ended', () => {
             case 'assets/videos/video-4.mp4':
                 document.querySelector('#video-default').src= "assets/videos/video-5.mp4";
                 document.querySelector('#video-default').play();
+                document.querySelector('.video').classList.remove('action-buttons');
                 document.querySelector('#video-default').classList.remove('hidden');
                 document.querySelector('#gamefication').classList.add('hidden');
                 document.querySelector('.group-bt').classList.add('hidden');
@@ -227,6 +230,7 @@ document.querySelector('#video-default').addEventListener('ended', () => {
             case 'assets/videos/video-5.mp4':
                 document.querySelector('#video-default').src= "assets/videos/video-6.mp4";
                 document.querySelector('#video-default').play();
+                document.querySelector('.video').classList.remove('action-buttons');
                 document.querySelector('#video-default').classList.remove('hidden');
                 document.querySelector('#gamefication').classList.add('hidden');
                 document.querySelector('.group-bt').classList.add('hidden');
@@ -238,6 +242,7 @@ document.querySelector('#video-default').addEventListener('ended', () => {
             case 'assets/videos/video-6.mp4':
                 document.querySelector('#video-default').src= "assets/videos/video-7.mp4";
                 document.querySelector('#video-default').play();
+                document.querySelector('.video').classList.remove('action-buttons');
                 document.querySelector('#video-default').classList.remove('hidden');
                 document.querySelector('#gamefication').classList.add('hidden');
                 document.querySelector('.group-bt').classList.add('hidden');
@@ -249,6 +254,7 @@ document.querySelector('#video-default').addEventListener('ended', () => {
             case 'assets/videos/video-7.mp4':
                 document.querySelector('#video-default').src= "assets/videos/video-8.mp4";
                 document.querySelector('#video-default').play();
+                document.querySelector('.video').classList.remove('action-buttons');
                 document.querySelector('#video-default').classList.remove('hidden');
                 document.querySelector('#gamefication').classList.add('hidden');
                 document.querySelector('.group-bt').classList.add('hidden');
