@@ -182,7 +182,20 @@
 .bt-viewall .bt-view:hover {
     text-shadow: 0 0 10px #a3def5;
 }
-
+.footer {
+    align-items: center;
+    background-color: hsla(0, 0%, 98%, 1);
+    color: hsla(0, 0%, 60%, 1);
+    display: flex;
+    font-size: .9rem;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.footer a {
+    color: hsla(0, 0%, 60%, 1);
+    font-weight: bold;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 1440px) {
     .center-content {
@@ -211,6 +224,11 @@
     }
     .video .box-video video {
         width: 96%;
+    }
+    .footer {
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
 
