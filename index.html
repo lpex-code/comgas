@@ -32,6 +32,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/import.css?v=1.0">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQYYTXQC8X"></script>
     <script>
@@ -56,12 +57,12 @@
                         <video id="gamefication" class="hidden" loop controlsList="nodownload" playsinline src="assets/videos/game.mp4">
                         </video>
 
-                        <video id="video-gal" class="hidden" controls poster="assets/images/capa.png" controlsList="nodownload" playsinline src="assets/videos/video-1.mp4">
+                        <video id="video-gal" class="hidden" controls poster="assets/images/capa.png" controlsList="nodownload" playsinline data-source="assets/videos/video-1.mp4">
                         </video>
                     </div>
                     <div class="countdow" style="color: white; margin-top: 10px; text-transform: uppercase; font-size: .7rem;"></div>
                     <div class="group-bt hidden">
-                        <button data-source="assets/videos/video-2-3.mp4" class="anime" id="video2">2. GESTÃO E MONITORAMENTO</button>
+                        <button data-source="assets/videos/02 ORIGINAL video-2-3.mp4" class="anime" id="video2">2. GESTÃO E MONITORAMENTO</button>
                         <button data-source="assets/videos/video-4.mp4" class="anime" id="video3">3. GESTÃO DOS SERVIÇOS DO CAMPO</button>
                         <button data-source="assets/videos/video-5.mp4" class="anime" id="video4">4. O QUE MAIS VOCÊ PODERIA ME MOSTRAR?</button>
         
@@ -151,7 +152,10 @@
             </div>
 
             <div class="owl-carousel owl-theme galeria-videos">
-                <div class="item" id="vd1" data-source="assets/videos/video-1.mp4" style="background-image: url('assets/images/capa.png');">
+				
+
+				
+                <div class="item" id="vd1" data-source="assets/videos/01 video-1.mp4" style="background-image: url('assets/images/capa.png');">
                     <div class="box anime">
                         <div class="if">
                             <p>1. APRESENTAÇÃO INICIAL</p>
@@ -159,12 +163,17 @@
                         </div>
 
                         <div class="icon anime">
-                            <i class="fas fa-play-circle"></i>
+                            <i data-item="vd1" data-source="assets/videos/01 video-1.mp4" class="fas fa-play-circle muda"></i> &nbsp;
+							<i data-item="vd1" data-source="assets/videos/01 COMGÁS-Legenda-Vídeo01.mp4" class="bi bi-badge-cc muda"></i> &nbsp;
+							<i data-item="vd1" data-source="assets/videos/01 CLIPE 1 LIBRAS - PRONTO.mp4" class="bi bi-play-circle muda"></i> &nbsp;
                         </div>
+					
                     </div>
+					
                 </div>
+	
 
-                <div class="item" id="vd2" data-source="assets/videos/video-2-3.mp4" style="background-image: url('assets/images/capa2.png');">
+                <div class="item" id="vd2" data-source="assets/videos/02 ORIGINAL video-2-3.mp4" style="background-image: url('assets/images/capa2.png');">
                     <div class="box anime">
                         <div class="if">
                             <p>2. GESTÃO E MONITORAMENTO</p>
@@ -172,12 +181,16 @@
                         </div>
 
                         <div class="icon anime">
-                            <i class="fas fa-play-circle"></i>
+                            <i data-item="vd2" data-source="assets/videos/02 ORIGINAL video-2-3.mp4" class="fas fa-play-circle muda"></i> &nbsp;
+							<i data-item="vd2" data-source="assets/videos/02 LEGENDA COMGÁS-Legenda-Vídeo02.mp4" class="bi bi-badge-cc muda"></i> &nbsp;
+							<i data-item="vd2" data-source="assets/videos/02 LIBRAS CLIPE 2 LIBRAS - PRONTO.mp4" class="bi bi-play-circle muda"></i> &nbsp;
                         </div>
+						
                     </div>
                 </div>
-
-                <div class="item" id="vd3" data-source="assets/videos/video-4.mp4" style="background-image: url('assets/images/capa3.png');">
+	
+				
+                <div class="item" id="vd3" data-source="assets/videos/03 video-4.mp4" style="background-image: url('assets/images/capa3.png');">
                     <div class="box anime">
                         <div class="if">
                             <p>3. GESTÃO DOS SERVIÇOS DO CAMPO</p>
@@ -185,12 +198,14 @@
                         </div>
 
                         <div class="icon anime">
-                            <i class="fas fa-play-circle"></i>
+                            <i data-item="vd3" data-source="assets/videos/03 video-4.mp4" class="fas fa-play-circle muda"></i> &nbsp;
+							<i data-item="vd3" data-source="assets/videos/03 COMGÁS-Legenda-Vídeo03.mp4" class="bi bi-badge-cc muda"></i> &nbsp;
+							<i data-item="vd3" data-source="assets/videos/03 CLIPE 3 LIBRAS - PRONTO.mp4" class="bi bi-play-circle muda"></i> &nbsp;
                         </div>
                     </div>
                 </div>
 
-                <div class="item" id="vd4" data-source="assets/videos/video-5.mp4" style="background-image: url('assets/images/capa4.png');">
+                <div class="item" id="vd4" data-source="assets/videos/04 video-5.mp4" style="background-image: url('assets/images/capa4.png');">
                     <div class="box anime">
                         <div class="if">
                             <p>4. O QUE MAIS VOCÊ PODERIA ME MOSTRAR?</p>
@@ -198,12 +213,14 @@
                         </div>
 
                         <div class="icon anime">
-                            <i class="fas fa-play-circle"></i>
+                            <i data-item="vd4" data-source="assets/videos/04 video-5.mp4" class="fas fa-play-circle muda"></i> &nbsp;
+							<i data-item="vd4" data-source="assets/videos/04 COMGÁS-Legenda-Vídeo04.mp4" class="bi bi-badge-cc muda"></i> &nbsp;
+							<i data-item="vd4" data-source="assets/videos/04 CLIPE 4 LIBRAS - PRONTO.mp4" class="bi bi-play-circle muda"></i> &nbsp;
                         </div>
                     </div>
                 </div>
 
-                <div class="item" id="vd5" data-source="assets/videos/video-6.mp4" style="background-image: url('assets/images/capa5.png');">
+                <div class="item" id="vd5" data-source="assets/videos/05 video-6.mp4" style="background-image: url('assets/images/capa5.png');">
                     <div class="box anime">
                         <div class="if">
                             <p>5. COMO ACOMPANHAMOS O GÁS NA NOSSA REDE?</p>
@@ -211,12 +228,14 @@
                         </div>
 
                         <div class="icon anime">
-                            <i class="fas fa-play-circle"></i>
+                            <i data-item="vd5" data-source="assets/videos/05 video-6.mp4" class="fas fa-play-circle muda"></i> &nbsp;
+							<i data-item="vd5" data-source="assets/videos/05 COMGÁS Legenda-Vídeo05.mp4" class="bi bi-badge-cc muda"></i> &nbsp;
+							<i data-item="vd5" data-source="assets/videos/05 CLIPE 5 LIBRAS - PRONTO.mp4" class="bi bi-play-circle muda"></i> &nbsp;
                         </div>
                     </div>
                 </div>
 
-                <div class="item" id="vd6" data-source="assets/videos/video-7.mp4" style="background-image: url('assets/images/capa6.png');">
+                <div class="item" id="vd6" data-source="assets/videos/06 video-7.mp4" style="background-image: url('assets/images/capa6.png');">
                     <div class="box anime">
                         <div class="if">
                             <p>6. NOSSOS ATIVOS ESTÃO SAUDÁVEIS?</p>
@@ -224,12 +243,14 @@
                         </div>
 
                         <div class="icon anime">
-                            <i class="fas fa-play-circle"></i>
+                            <i data-item="vd6" data-source="assets/videos/06 video-7.mp4" class="fas fa-play-circle muda"></i> &nbsp;
+							<i data-item="vd6" data-source="assets/videos/06 COMGÁS-LegendA-Vídeo06.mp4" class="bi bi-badge-cc muda"></i> &nbsp;
+							<i data-item="vd6" data-source="assets/videos/06 CLIPE 6 LIBRAS PRONTO.mp4" class="bi bi-play-circle muda"></i> &nbsp;
                         </div>
                     </div>
                 </div>
 
-                <div class="item" id="vd7" data-source="assets/videos/video-8.mp4" style="background-image: url('assets/images/capa7.png');">
+                <div class="item" id="vd7" data-source="assets/videos/07 video-8.mp4" style="background-image: url('assets/images/capa7.png');">
                     <div class="box anime">
                         <div class="if">
                             <p>7. ESTOU FICANDO SEM TEMPO</p>
@@ -237,7 +258,9 @@
                         </div>
 
                         <div class="icon anime">
-                            <i class="fas fa-play-circle"></i>
+                            <i data-item="vd7" data-source="assets/videos/07 video-8.mp4" class="fas fa-play-circle muda"></i> &nbsp;
+							<i data-item="vd7" data-source="assets/videos/07 COMGÁS-Legenda-Vídeo07.mp4" class="bi bi-badge-cc muda"></i> &nbsp;
+							<i data-item="vd7" data-source="assets/videos/07 CLIPE 7 LIBRAS - PRONTO.mp4" class="bi bi-play-circle muda"></i> &nbsp;
                         </div>
                     </div>
                 </div>
@@ -250,9 +273,32 @@
         </div>
     </main>
 
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/iphone.js"></script>
+	<script>
+$(document.body).on('click','.muda',function(){
+
+video = $(this).attr('data-source');
+id = $(this).attr('data-item');
+
+        var element =  document.getElementById(id);
+        var element2 =  document.getElementById("video-gal");
+		
+        element.setAttribute("data-source", video);
+        element2.setAttribute("data-source", video);
+        element2.src = video;
+		
+		// Show loading animation.
+		element2.play();
+
+
+		
+
+});
+
+</script>
 </body>
 </html>
