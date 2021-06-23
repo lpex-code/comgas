@@ -335,12 +335,14 @@ video = $(this).attr('data-source');
 
 id = $(this).attr('data-item');
 
-		if (id != 0){
+		if ( parseInt(id) != 0){
         var element =  document.getElementById(id);
 		element.setAttribute("data-source", video);
 		}else{
+		alert(id);
 		 $("#video-default").addClass("hidden");
 		 $("#video-gal").removeClass("hidden");
+		 $('#video-default').attr( 'src','');
 		}
 		
         var element2 =  document.getElementById("video-gal");
