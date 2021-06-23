@@ -50,6 +50,8 @@
         <div class="full-bg">
             <div class="center-content">
                 <section class="video">
+				
+				
                     <div class="box-video">
                         <video id="video-default" controls poster="assets/images/capa.png" controlsList="nodownload" playsinline src="assets/videos/01 CLIPE 1 LIBRAS - PRONTO.mp4">
                         </video>
@@ -59,6 +61,11 @@
 
                         <video id="video-gal" class="hidden" controls poster="assets/images/capa.png" controlsList="nodownload" playsinline data-source="assets/videos/01 CLIPE 1 LIBRAS - PRONTO.mp4">
                         </video>
+						
+		
+
+             
+					
                     </div>
                     <div class="countdow" style="color: white; margin-top: 10px; text-transform: uppercase; font-size: .7rem;"></div>
                     <div class="group-bt hidden">
@@ -88,7 +95,31 @@
 						</button>
 						
                     </div>
-                    <div class="bt-viewall">
+					<style>
+					.botao_neon {
+						border: 1px solid hsla(0, 0%, 90%, .6 );
+						border-radius: 6px;
+						background-color: transparent;
+						font-weight: bold;
+						font-size: 1.2rem;
+						text-transform: uppercase;
+						color: #73c5e6;
+						text-shadow: 0 0 5px #2b82a4;
+						padding: 10px 30px;
+						text-decoration: none;
+						}
+					</style>
+                    <div class="" style="margin: 10px 0 !important;" >
+                            <i data-item="0" data-source="assets/videos/01 video-1.mp4" 
+							class="fas fa-play-circle muda botao_neon"></i> &nbsp;
+							
+							<i data-item="0" data-source="assets/videos/01 COMGÁS-Legenda-Vídeo01.mp4" 
+							class="bi bi-badge-cc muda botao_neon"></i> &nbsp;
+							
+							<i data-item="0" data-source="assets/videos/01 CLIPE 1 LIBRAS - PRONTO.mp4" 
+							class="muda botao_neon"><img src="assets/images/libras-icone.png" width="35"></i> &nbsp;
+					</div>
+						<div class="bt-viewall" style="margin: 10px 0 !important;" >
                         <a href="#view-all" class="bt-view anime">
                             Ver mais
                         </a>
@@ -301,12 +332,20 @@
 $(document.body).on('click','.muda',function(){
 
 video = $(this).attr('data-source');
+
 id = $(this).attr('data-item');
 
+		if (id != 0){
         var element =  document.getElementById(id);
+		element.setAttribute("data-source", video);
+		}else{
+		 $("#video-default").addClass("hidden");
+		 $("#video-gal").removeClass("hidden");
+		}
+		
         var element2 =  document.getElementById("video-gal");
 		
-        element.setAttribute("data-source", video);
+        
         element2.setAttribute("data-source", video);
         element2.src = video;
 		
